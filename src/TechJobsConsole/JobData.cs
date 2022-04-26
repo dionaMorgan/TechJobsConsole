@@ -61,6 +61,7 @@ namespace TechJobsConsole
         /*
          * Load and parse data from job_data.csv
          */
+        //methods are to load in csv data into the app, make a list of dictionaries
         private static void LoadData()
         {
 

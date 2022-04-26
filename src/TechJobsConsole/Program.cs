@@ -36,7 +36,7 @@ namespace TechJobsConsole
 
                     if (columnChoice.Equals("all"))
                     {
-                        PrintJobs(JobData.FindAll());
+                        PrintJobs(JobData.FindAll()); //--> PrintJobs(AllJobs)
                     }
                     else
                     {
@@ -64,6 +64,7 @@ namespace TechJobsConsole
                     if (columnChoice.Equals("all"))
                     {
                         Console.WriteLine("Search all fields not yet implemented.");
+                        //need code for functionality to show search terms - Diona
                     }
                     else
                     {
@@ -118,7 +119,18 @@ namespace TechJobsConsole
 
         private static void PrintJobs(List<Dictionary<string, string>> someJobs)
         {
-            Console.WriteLine("PrintJobs is not implemented yet");
+            //Console.WriteLine("PrintJobs is not implemented yet");
+         
+            foreach (Dictionary<string, string> input in someJobs)
+            {
+                Console.WriteLine("~~~~~~~~~~~~~~~~~");
+                foreach (KeyValuePair<string, string> kvp in someJobs)
+                {
+                    Console.WriteLine($"{kvp.Key} : {kvp.Value}");
+                }
+                Console.WriteLine("~~~~~~~~~~~~~~~~~");
+            }
         }
     }
 }
+//call the printJobs method to print our all the dictionaries

@@ -124,12 +124,13 @@ namespace TechJobsConsole
             foreach (Dictionary<string, string> input in someJobs)
             {
                 Console.WriteLine("~~~~~~~~~~~~~~~~~");
-                foreach (KeyValuePair<string, string> kvp in someJobs)
+                foreach (KeyValuePair<string, string> kvp in input)
                 {
                     Console.WriteLine($"{kvp.Key} : {kvp.Value}");
                 }
                 Console.WriteLine("~~~~~~~~~~~~~~~~~");
             }
+          
         }
     }
 }

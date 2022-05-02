@@ -132,11 +132,15 @@ namespace TechJobsConsole
                 }
                 Console.WriteLine("~~~~~~~~~~~~~~~~~");
             }
+<<<<<<< HEAD
 
             if (someJobs.Count == 0)
             {
                 Console.WriteLine("No Result");
             }
+=======
+          
+>>>>>>> d78c53776aa03ec080eae39d4fe2ea8aea7f3161
         }
           
         
